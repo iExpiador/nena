@@ -219,3 +219,21 @@ body {
         transform: scale(1);
     }
 }
+
+/* EFECTO MARIPOSA */
+.butterfly {
+  position: fixed;
+  font-size: 20px;
+  animation: fly 12s linear infinite;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+@keyframes fly {
+  from {
+    transform: translateX(-10vw) translateY(0);
+  }
+  to {
+    transform: translateX(110vw) translateY(-40vh);
+  }
+}
