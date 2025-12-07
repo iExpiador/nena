@@ -140,15 +140,15 @@ body {
   }
 }
 
-/* Botón flotante */
+/* Botón flotante BLANCO */
 #music-toggle {
     position: fixed;
     bottom: 20px;
     right: 20px;
     width: 50px;
     height: 50px;
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -157,46 +157,47 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Neón blanco permanente */
+
+    /* Brillo BLANCO permanente */
     box-shadow: 
-        0 0 10px rgba(255, 255, 255, 0.8),
-        inset 0 0 5px rgba(255, 255, 255, 0.4);
+        0 0 12px rgba(255, 255, 255, 0.8),
+        inset 0 0 6px rgba(255, 255, 255, 0.4);
 
     /* Latido infinito */
     animation: pulse 2s infinite ease-in-out;
     transition: all 0.3s;
 }
 
-/* Animación de pulsación */
+/* Animación BLANCA */
 @keyframes pulse {
     0% { 
         transform: scale(1);
         box-shadow: 
-            0 0 10px rgba(255, 0, 150, 0.7),
-            inset 0 0 5px rgba(255, 0, 150, 0.3);
+            0 0 12px rgba(255, 255, 255, 0.8),
+            inset 0 0 6px rgba(255, 255, 255, 0.4);
     }
     50% { 
-        transform: scale(1.1);
+        transform: scale(1.12);
         box-shadow: 
-            0 0 15px rgba(255, 0, 150, 0.9),
-            inset 0 0 10px rgba(255, 0, 150, 0.5);
+            0 0 22px rgba(255, 255, 255, 1),
+            inset 0 0 12px rgba(255, 255, 255, 0.7);
     }
     100% { 
         transform: scale(1);
         box-shadow: 
-            0 0 10px rgba(255, 0, 150, 0.7),
-            inset 0 0 5px rgba(255, 0, 150, 0.3);
+            0 0 12px rgba(255, 255, 255, 0.8),
+            inset 0 0 6px rgba(255, 255, 255, 0.4);
     }
 }
 
-/* Efecto al pasar el mouse (brillo intenso) */
+/* Hover BLANCO intenso */
 #music-toggle:hover {
     box-shadow: 
-        0 0 20px rgba(255, 0, 150, 1),
-        inset 0 0 10px rgba(255, 0, 150, 0.7);
+        0 0 30px rgba(255, 255, 255, 1),
+        inset 0 0 14px rgba(255, 255, 255, 0.9);
 }
 
-/* Efecto al hacer clic (onda expansiva rosa) */
+/* Click BLANCO (onda expansiva) */
 #music-toggle:active {
     animation: pulse-click 0.5s;
 }
@@ -205,14 +206,14 @@ body {
     0% { 
         transform: scale(0.9);
         box-shadow: 
-            0 0 5px rgba(255, 255, 255, 0.5),
-            inset 0 0 2px rgba(255, 255, 255, 0.3);
+            0 0 6px rgba(255, 255, 255, 0.6),
+            inset 0 0 3px rgba(255, 255, 255, 0.4);
     }
     50% { 
-        transform: scale(1.15);
+        transform: scale(1.18);
         box-shadow: 
-            0 0 30px rgba(255, 255, 255, 1),
-            inset 0 0 15px rgba(255, 255, 255, 0.9);
+            0 0 35px rgba(255, 255, 255, 1),
+            inset 0 0 18px rgba(255, 255, 255, 1);
     }
     100% { 
         transform: scale(1);
