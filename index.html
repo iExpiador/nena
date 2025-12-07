@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pink Diana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="profile-card">
+      <div class="search-bar">
+        <input type="text" value="                     (ꈍᴗꈍ)♡" readonly />
+        <div class="icons">
+          <button><i class="icon-user"></i></button>
+          <button><i class="icon-gear"></i></button>
+        </div>
+      </div>
+
+      <div class="profile-info">
+        <img src="https://i.imgur.com/zEF98b2.gif" alt="Profile Picture" class="avatar" />
+        <div class="info-text">
+          <h2>Ϟ⡡Sყᥣρhᥲ. ⬥</h2>
+          <ul>
+            <li>♡ Aries</li>
+            <li>♡ Female</li>
+            <li>♡ Atípica</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="btn forum">𐦍</button>
+        <button class="btn deseados">𖹭</button>
+        <button class="btn blog"> ❀ </button>
+      </div>
+    </div>
+  </div>
+
+ <!-- Botón flotante -->
+    <button id="music-toggle">🔇</button>
+    
+    <!-- Reproductor oculto -->
+    <audio id="bg-music" loop>
+        <source src="assets/di.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const music = document.getElementById('bg-music');
+        const toggleBtn = document.getElementById('music-toggle');
+        let isPlaying = false;
+
+        // Intentar autoplay (puede fallar)
+        music.play().then(() => {
+            isPlaying = true;
+            toggleBtn.textContent = '🔊';
+        }).catch(() => {
+            isPlaying = false;
+            toggleBtn.textContent = '🔇';
+        });
+
+        // Control manual
+        toggleBtn.addEventListener('click', () => {
+            isPlaying ? music.pause() : music.play();
+            isPlaying = !isPlaying;
+            toggleBtn.textContent = isPlaying ? '🔊' : '🔇';
+        });
+    </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
