@@ -69,22 +69,19 @@
 
   <script src="script.js"></script>
 
-  <script>
-const butterflies = ["🦋","✨","🌙"];
+  <div class="stars"></div>
 
-setInterval(() => {
-  const b = document.createElement("div");
-  b.className = "butterfly";
-  b.textContent = butterflies[Math.floor(Math.random() * butterflies.length)];
-  b.style.top = Math.random() * 90 + "vh";
-  b.style.left = "-5vw";
-  b.style.animationDuration = (8 + Math.random() * 6) + "s";
-  document.body.appendChild(b);
+<script>
+const starsContainer = document.querySelector('.stars');
 
-  setTimeout(() => {
-    b.remove();
-  }, 15000);
-}, 2500);
+for (let i = 0; i < 80; i++) {
+  const star = document.createElement('div');
+  star.classList.add('star');
+  star.style.left = Math.random() * 100 + 'vw';
+  star.style.top = Math.random() * 100 + 'vh';
+  star.style.animationDelay = Math.random() * 5 + 's';
+  starsContainer.appendChild(star);
+}
 </script>
 </body>
 </html>
