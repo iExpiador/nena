@@ -67,13 +67,13 @@ body {
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #ffbfbf;
+  border: 2px solid #ffffff;
 }
 
 .info-text h2 {
   margin: 0;
   font-size: 1.5rem;
-  color: #ffbfbf;
+  color: #ffffff;
 }
 
 .info-text ul {
@@ -101,7 +101,7 @@ body {
 }
 
 .btn {
-  background: #ffbfbf;
+  background: #ffffff;
   border: none;
   padding: 10px;
   color: #222;
@@ -112,7 +112,7 @@ body {
 }
 
 .btn:hover {
-  background: #520505;
+  background: #050505;
 }
 
 .player iframe {
@@ -157,10 +157,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Neón rosa permanente */
+    /* Neón blanco permanente */
     box-shadow: 
-        0 0 10px rgba(255, 0, 150, 0.7),
-        inset 0 0 5px rgba(255, 0, 150, 0.3);
+        0 0 10px rgba(255, 255, 255, 0.8),
+        inset 0 0 5px rgba(255, 255, 255, 0.4);
+
     /* Latido infinito */
     animation: pulse 2s infinite ease-in-out;
     transition: all 0.3s;
