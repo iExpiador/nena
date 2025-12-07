@@ -68,5 +68,23 @@
     </script>
 
   <script src="script.js"></script>
+
+  <script>
+const butterflies = ["🦋","✨","🌙"];
+
+setInterval(() => {
+  const b = document.createElement("div");
+  b.className = "butterfly";
+  b.textContent = butterflies[Math.floor(Math.random() * butterflies.length)];
+  b.style.top = Math.random() * 90 + "vh";
+  b.style.left = "-5vw";
+  b.style.animationDuration = (8 + Math.random() * 6) + "s";
+  document.body.appendChild(b);
+
+  setTimeout(() => {
+    b.remove();
+  }, 15000);
+}, 2500);
+</script>
 </body>
 </html>
