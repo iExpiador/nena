@@ -53,17 +53,17 @@
         // Intentar autoplay (puede fallar)
         music.play().then(() => {
             isPlaying = true;
-            toggleBtn.textContent = '▶';
+            toggleBtn.textContent = '❚❚';
         }).catch(() => {
             isPlaying = false;
-            toggleBtn.textContent = '❚❚';
+            toggleBtn.textContent = '▶';
         });
 
         // Control manual
         toggleBtn.addEventListener('click', () => {
             isPlaying ? music.pause() : music.play();
             isPlaying = !isPlaying;
-            toggleBtn.textContent = isPlaying ? '❚❚' : '▶';
+            toggleBtn.textContent = isPlaying ? '▶' : '❚❚';
         });
     </script>
 
