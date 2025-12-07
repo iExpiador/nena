@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.querySelector(".btn.deseados").addEventListener("click", () => {
-    window.open("https://www.youtube.com/watch?v=-qvYXZOUImo", "_blank");
+    window.open("https://www.youtube.com/watch?v=G0d9QAq4sMg", "_blank");
   });
 
   document.querySelector(".btn.blog").addEventListener("click", () => {
-    window.open("https://www.youtube.com/watch?v=VSXT4a2kRHA", "_blank");
+    window.open("https://www.youtube.com/watch?v=RRKJiM9Njr8", "_blank");
   });
 
   console.log("Dark profile card loaded.");
